@@ -7,8 +7,11 @@ MU_TESTS_INIT
 
 static int test_entropy_occurrences() {
   FILE *input = fopen("test1", "r");
-  int counts[256];
+  int counts_bak[257], *counts;
   int i;
+
+  counts_bak[0]=0;
+  counts = &counts_bak[1];
   for (i = 0; i < 256; i++) {
     counts[i] = 0;
   }
@@ -19,7 +22,14 @@ static int test_entropy_occurrences() {
   mu_assert_eq("counts", counts['b'], 3);
   mu_assert_eq("counts", counts['c'], 1);
   mu_assert_eq("counts", counts['d'], 0);
+
+  /* Check that the previous cell of counts has not been altered.
+     If this test fails, please check what you're doing in count_occurrences
+     when reaching the end of the file.
+   */
+  mu_assert_eq("counts", counts_bak[0], 0);
   
+  fclose(input);
   return 0;
 }
 
