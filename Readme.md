@@ -66,3 +66,11 @@ Après avoir ajouter un test `test_entropy_occurrences_abc`, qui permet de verif
 ALL TESTS PASSED
 Tests run: 3 (including 10 assertions)
 ```
+
+#### Q2.5:
+Après avoir implémenter la fonction de test `test_entropy_function`, et en compilant dans le répertoire des tests `make` lançant le programme de test de cette fonction`./test_entropy`, on s'aperçoit que tout les assertions du test se sont executées avec succès.
+
+```bash
+ALL TESTS PASSED
+Tests run: 3 (including 12 assertions)
+```
