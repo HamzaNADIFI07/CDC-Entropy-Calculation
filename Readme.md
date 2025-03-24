@@ -24,13 +24,13 @@ p_s = \frac{n_s}{N}
 Ce qui nous donne la formule suivante:
 
 ```math
-H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 \left( \frac{n_s}{N} \right)
+H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 \left( \frac{n_s}{N} \right)\n
 
-\log_2 \left( \frac{n_s}{N} \right) = \log_2 n_s - \log_2 N
+\log_2 \left( \frac{n_s}{N} \right) = \log_2 n_s - \log_2 \n
 
-H(f) = -\sum_{s=0}^{255} \left( \frac{n_s}{N} \log_2 n_s - \frac{n_s}{N} \log_2 N \right)
+H(f) = -\sum_{s=0}^{255} \left( \frac{n_s}{N} \log_2 n_s - \frac{n_s}{N} \log_2 N \right)\n
 
-H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 n_s + \log_2 N \sum_{s=0}^{255} \frac{n_s}{N}
+H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 n_s + \log_2 N \sum_{s=0}^{255} \frac{n_s}{N}\n
 
 ```
 Et comme:
