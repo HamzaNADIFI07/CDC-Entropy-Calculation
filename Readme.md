@@ -74,3 +74,31 @@ Après avoir implémenter la fonction de test `test_entropy_function`, et en com
 ALL TESTS PASSED
 Tests run: 3 (including 12 assertions)
 ```
+
+#### Q2.6:
+
+Après avoir implémenter la fonction `main` dans le fichier `filentropy.c` et en lançant `./filentropy lib/entropy.h`, j'au eu comme résultat:
+
+```bash
+Le fichier fait 1156 octets et a une entropie de 4.54 bits par octet
+```
+
+#### Q2.7:
+
+Selon le **théorème du codage sans bruit**, la taille optimale d'un fichier codé est déterminée par son **entropie** divisée par le logarithme en base 2 de la taille de l'alphabet utilisé pour représenter ses symboles. 
+
+Pour la plupart des cas, avec un alphabet de **8** bits par symbole, la **taille minimale** du fichier codé serait d'environ **l'entropie** du fichier divisée par 8 bits par symbole. Ainsi, la taille optimale du fichier codé serait donc **H(S)/8 bits**.
+
+#### Q2.8:
+
+La formule du pourcentage de réduction de la taille du fichier initial que permettrait un tel codage idéal est:
+
+```math
+res = 100 - \left( \frac{\text{entropy}}{8} \times 100 \right)
+```
+Et après avoir compiler avec `make`, et éxecuter avec `./filentropy lib/entropy.h`, j'ai eu comme résultat:
+
+```bash
+Le fichier fait 1156 octets et a une entropie de 4.54 bits par octet
+Au mieux un codage optimal améliorerait le stockage de ce fichier de 43 %
+```
