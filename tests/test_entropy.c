@@ -33,6 +33,31 @@ static int test_entropy_occurrences() {
   return 0;
 }
 
+static int test_entropy_occurrences_abc() {
+  FILE *input = fopen("test_abc", "rb");
+  int counts_bak[257], *counts;
+  int i;
+
+  counts_bak[0] = 0;
+  counts = &counts_bak[1];
+
+  for (i = 0; i < 256; i++) {
+    counts[i] = 0;
+  }
+
+  count_occurrences(input, counts);
+
+  mu_assert_eq("counts[a]", counts['a'], 1);
+  mu_assert_eq("counts[b]", counts['b'], 1);
+  mu_assert_eq("counts[c]", counts['c'], 1);
+  mu_assert_eq("counts[z]", counts['z'], 0);
+  mu_assert_eq("cell avant tableau modifiée", counts_bak[0], 0);
+
+  fclose(input);
+  return 0;
+}
+
+
 static int test_entropy_function() {
   /* À COMPLÉTER */
   
@@ -42,6 +67,7 @@ static int test_entropy_function() {
 
 static int all_tests() {
    mu_run_test(test_entropy_occurrences);
+   mu_run_test(test_entropy_occurrences_abc);
    mu_run_test(test_entropy_function);
    return mu_tests_success;
 }
