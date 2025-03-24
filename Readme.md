@@ -12,6 +12,34 @@ Pour vérifier que **l’entropie** d’un fichier f est donnée par la formule 
 ```math
 H(f) = \log_2 N - \frac{\sum_{s=0}^{255} n_s\log_2 n_s}{N}
 ```
+On sait que la formule de l’entropie est:
+
+```math
+H(f) = -\sum_{s=0}^{255} p_s \log_2 p_s
+```
+Avec:
+```math
+p_s = \frac{n_s}{N}
+```
+Ce qui nous donne la formule suivante:
+
+```math
+H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 \left( \frac{n_s}{N} \right)
+\log_2 \left( \frac{n_s}{N} \right) = \log_2 n_s - \log_2 N
+H(f) = -\sum_{s=0}^{255} \left( \frac{n_s}{N} \log_2 n_s - \frac{n_s}{N} \log_2 N \right)
+H(f) = -\sum_{s=0}^{255} \frac{n_s}{N} \log_2 n_s + \log_2 N \sum_{s=0}^{255} \frac{n_s}{N}
+```
+Et comme:
+
+```math
+\sum_{s=0}^{255} \frac{n_s}{N} = 1
+```
+Ce qui devient:
+
+```math
+H(f) = \log_2 N - \frac{\sum_{s=0}^{255} n_s \log_2 n_s}{N}
+```
+
 
 ## Partie2 - Mise en œuvre du calcul de l’entropie
 
