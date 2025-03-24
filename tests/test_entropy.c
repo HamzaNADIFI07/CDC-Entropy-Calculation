@@ -60,8 +60,18 @@ static int test_entropy_occurrences_abc() {
 
 static int test_entropy_function() {
   /* À COMPLÉTER */
-  
+
+  FILE *input0 = fopen("test_zero", "r");
+  mu_assert("Fichier test_zero introuvable", input0 != NULL);
+
+  int counts0[256] = {0};
+  count_occurrences(input0, counts0);
+  fclose(input0);
+
+  struct file_stat e0 = entropy(counts0);
+  mu_assert("entropie nulle attendue", e0.entropy < 0.0001f);
   return 0;
+
 }
 
 
