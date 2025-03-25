@@ -110,15 +110,15 @@ Au mieux un codage optimal améliorerait le stockage de ce fichier de 43 %
 
 |type       | adresse  |   nom    | taille ( octets)  |  entropie (bits / octet) |
 |---        | ---      | ---      | ---      |---        |
-|archive.tar    |   [ source archive tar ]("https://gitlab.com/bnb2002436/gitlab")     |     archive_tar.tar     |   4 208 640       |       4.93   |
-|archive.zip    |   [ source archive zip ]("https://gitlab.com/mrymakr/doxy-runner")  |  archive_zip.zip      |  170 358     |   7.99       |
-|  archive.zip  |  [ source archive zip2 ]("https://github.com/nashsu/FreeAskInternet")  |  archive_zip2.zip  |  28 070  |  7.95  |
-| image.jpg  |  [source image jpg ]("https://commons.wikimedia.org/wiki/Main_Page#/media/File:Eucomis_kuiflelie._07-06-2023._(d.j.b).jpg")  |  image1.jpg  | 7 375 183 | 7.98 |
-| image.png  |  [source image png ]("https://icon-icons.com/fr/icone/fichier-extension-png/78612")  |  image2.png  |  5 846  |  7.55  |
-| image.bmp  |  [source image bmp ]("https://commons.wikimedia.org/wiki/Main_Page#/media/File:Eucomis_kuiflelie._07-06-2023._(d.j.b).jpg")  |  image3.bmp  |  33 253 336  |  7.35  |
-|  audio.mp3  |  [source audio mp3 ]("https://commons.wikimedia.org/wiki/File:An_audio_recording_of_an_Australian_Raven_(Corvus_coronoides).wav")  | audio1.mp3  |136 121  |  7.96  |
-|  audio.ogg  |  [source audio ogg ]("https://commons.wikimedia.org/wiki/File:Audio_H%C3%B6rbild_Grillenzirpen_-_nachts_um_3_im_F%C3%B6hrenwald_M%C3%B6dling.ogg")  |audio2.ogg  |  387 342  |  7.95  |
-|  audio.wav  |  [source audio wav ]("https://commons.wikimedia.org/wiki/File:An_audio_recording_of_an_Australian_Raven_(Corvus_coronoides).wav")  |  audio3.wav  |  1 076 188  |  6.90  |
+|archive.tar    |   ![ source archive tar ]("https://gitlab.com/bnb2002436/gitlab")     |     archive_tar.tar     |   4 208 640       |       4.93   |
+|archive.zip    |   ![ source archive zip ]("https://gitlab.com/mrymakr/doxy-runner")  |  archive_zip.zip      |  170 358     |   7.99       |
+|  archive.zip  |  ![ source archive zip2 ]("https://github.com/nashsu/FreeAskInternet")  |  archive_zip2.zip  |  28 070  |  7.95  |
+| image.jpg  |  ![source image jpg ]("https://commons.wikimedia.org/wiki/Main_Page#/media/File:Eucomis_kuiflelie._07-06-2023._(d.j.b).jpg")  |  image1.jpg  | 7 375 183 | 7.98 |
+| image.png  |  ![source image png ]("https://icon-icons.com/fr/icone/fichier-extension-png/78612")  |  image2.png  |  5 846  |  7.55  |
+| image.bmp  |  ![source image bmp ]("https://commons.wikimedia.org/wiki/Main_Page#/media/File:Eucomis_kuiflelie._07-06-2023._(d.j.b).jpg")  |  image3.bmp  |  33 253 336  |  7.35  |
+|  audio.mp3  |  ![source audio mp3 ]("https://commons.wikimedia.org/wiki/File:An_audio_recording_of_an_Australian_Raven_(Corvus_coronoides).wav")  | audio1.mp3  |136 121  |  7.96  |
+|  audio.ogg  |  ![source audio ogg ]("https://commons.wikimedia.org/wiki/File:Audio_H%C3%B6rbild_Grillenzirpen_-_nachts_um_3_im_F%C3%B6hrenwald_M%C3%B6dling.ogg")  |audio2.ogg  |  387 342  |  7.95  |
+|  audio.wav  |  ![source audio wav ]("https://commons.wikimedia.org/wiki/File:An_audio_recording_of_an_Australian_Raven_(Corvus_coronoides).wav")  |  audio3.wav  |  1 076 188  |  6.90  |
 
 ### Q3.2:
 
