@@ -122,4 +122,4 @@ Au mieux un codage optimal améliorerait le stockage de ce fichier de 43 %
 
 ### Q3.2:
 
-Les différences d’entropie s’expliquent par la nature des fichiers et leur niveau de compression. Les fichiers déjà compressés (comme .zip, .jpg, .mp3, .ogg) ont une entropie élevée, proche de 8 bits par octet, car ils contiennent peu de redondance. En revanche, les formats non compressés (comme .tar, .bmp, .wav) ont une entropie plus faible, ce qui les rend plus compressibles. Ainsi, plus un fichier est compressé, plus son entropie est élevée.
+Les différences d’entropie s’expliquent par la nature des fichiers et leur niveau de compression. Les fichiers déjà compressés (comme `.zip`, `.jpg`, `.mp3`, `.ogg`) ont une entropie élevée, proche de 8 bits par octet, car ils contiennent peu de redondance. En revanche, les formats non compressés (comme `.tar`, `.bmp`, `.wav`) ont une entropie plus faible, ce qui les rend plus compressibles. Ainsi, plus un fichier est compressé, plus son entropie est élevée.
